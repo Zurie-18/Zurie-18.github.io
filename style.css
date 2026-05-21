@@ -9,9 +9,11 @@
    nav {
   flex-direction: column !important;
   align-items: center !important;
-  justify-content: center !important;
+  overflow-x: auto;
+  justify-content: flex-start !important;
   gap: 0.8rem;
   padding: 1rem;
+  
 }
 
  .nav-links {
