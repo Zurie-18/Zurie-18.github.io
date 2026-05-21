@@ -39,6 +39,7 @@ nav {
   display: flex;
   gap: 2rem;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -459,16 +460,16 @@ footer {
   }
 
   .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    gap: 1rem;
-  }
+  display: none !important;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  gap: 1rem;
+}
 
-  .nav-links.open {
-    display: flex;
-  }
+.nav-links.open {
+  display: flex !important;
+}
 
   .hero h1 {
     font-size: 2rem;
