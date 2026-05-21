@@ -7,11 +7,12 @@
 /* MOBILE */
 @media (max-width: 768px) {
    nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    padding: 1rem;
-  }
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.8rem;
+  padding: 1rem;
+}
 
   .nav-links {
     flex-wrap: wrap;
@@ -60,6 +61,7 @@
     gap: 0.5rem;
   }
 }
+
 /*html scroll transition code*/
 html {
   scroll-behavior: smooth;
@@ -107,6 +109,7 @@ nav {
 .nav-links a:hover {
   color: #C96A40;
 }
+
 /*HERO PART*/
 .hero img {
   width: 150px;
