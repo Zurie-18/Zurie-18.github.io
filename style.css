@@ -4,106 +4,18 @@
   box-sizing: border-box;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-   nav {
-  flex-direction: column !important;
-  align-items: center !important;
-  overflow-x: auto;
-  justify-content: flex-start !important;
-  gap: 0.8rem;
-  padding: 1rem;
-  
-}
-
- .nav-links {
-  flex-wrap: wrap !important;
-  justify-content: center !important;
-  gap: 0.5rem;
-}
-
-.nav-links a {
-  font-size: 0.78rem;
-}
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 0.95rem;
-  }
-
-  .experience-header,
-  .education-header {
-    flex-direction: column;
-    gap: 0.3rem;
-  }
-
-  .experience-card .date,
-  .education-card .date {
-    align-self: flex-start;
-  }
-
-  .about,
-  .skills,
-  .experience,
-  .education,
-  .certificates,
-  .projects,
-  .contact {
-    padding: 3rem 1.2rem;
-  }
-
-  .certificate-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-
-  .project-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-}
-.hamburger {
-  display: none;
-}
-
-/*hamburger*/
-.hamburger {
-  display: block;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #C96A40;
-}
-
-.nav-links {
-  display: none;
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
-  gap: 1rem;
-}
-
-.nav-links.open {
-  display: flex;
-}
-
-/*html scroll transition code*/
 html {
   scroll-behavior: smooth;
 }
-/*body*/
+
 body {
   font-family: "DM Sans", sans-serif;
   color: #2C2418;
   background-color: #FAF7F2;
   line-height: 1.7;
 }
-/*NAV BAR*/
+
+/* NAV */
 nav {
   position: sticky;
   top: 0;
@@ -140,15 +52,16 @@ nav {
   color: #C96A40;
 }
 
-/*HERO PART*/
-.hero img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid #C96A40;
-  object-fit: cover;
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #C96A40;
 }
 
+/* HERO */
 .hero {
   min-height: 90vh;
   display: flex;
@@ -157,6 +70,15 @@ nav {
   align-items: center;
   text-align: center;
   padding: 4rem 2rem;
+}
+
+.hero img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #C96A40;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
 }
 
 .hero h1 {
@@ -187,8 +109,7 @@ nav {
   background-color: #a8532d;
 }
 
-/*about*/
-
+/* ABOUT */
 .about {
   padding: 5rem 2rem;
   max-width: 800px;
@@ -208,7 +129,7 @@ nav {
   margin-bottom: 1rem;
 }
 
-/*skills*/
+/* SKILLS */
 .skills {
   padding: 5rem 2rem;
   max-width: 800px;
@@ -523,4 +444,70 @@ footer {
   color: #A0896E;
   font-size: 0.85rem;
   border-top: 1px solid #E8DDD0;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .experience-header,
+  .education-header {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .experience-card .date,
+  .education-card .date {
+    align-self: flex-start;
+  }
+
+  .about,
+  .skills,
+  .experience,
+  .education,
+  .certificates,
+  .projects,
+  .contact {
+    padding: 3rem 1.2rem;
+  }
+
+  .certificate-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 }
