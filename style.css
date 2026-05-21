@@ -14,12 +14,15 @@
   padding: 1rem;
 }
 
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.8rem;
-  }
+ .nav-links {
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 0.5rem;
+}
 
+.nav-links a {
+  font-size: 0.78rem;
+}
   .hero h1 {
     font-size: 2rem;
   }
