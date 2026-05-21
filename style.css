@@ -3,6 +3,62 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* MOBILE */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .experience-header,
+  .education-header {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .experience-card .date,
+  .education-card .date {
+    align-self: flex-start;
+  }
+
+  .about,
+  .skills,
+  .experience,
+  .education,
+  .certificates,
+  .projects,
+  .contact {
+    padding: 3rem 1.2rem;
+  }
+
+  .certificate-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
 /*html scroll transition code*/
 html {
   scroll-behavior: smooth;
